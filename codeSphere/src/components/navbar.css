@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navMainLink{
+    border-radius: 25px;
+    margin:10px;
+    padding: 10px;
+    border : 1.5px rgb(116, 115, 115) solid;
+}
+
+.navMainLink a{
+    display: inline-block;   /* ye main fix hai */
+    transition: 0.3s  ease-in-out;
+    color: rgb(161, 158, 158);
+}
+
+.navMainLink a:hover{   
+    color: white;
+    animation: linkAnimation 0.3s linear ;
+}
+
+@keyframes linkAnimation {
+  0% {transform: translate(0px,0px);}
+  25% {transform: translate(-2px,2px);}
+  50% {transform: translate(2px,-2px);}
+  75% {transform: translate(-2px,2px);}
+  100% {transform: translate(0px,0px);}
+}
+
+.auth{
+    padding: 10px;
+    margin: 10px;
+}
+
+.primary{
+    border: 1px solid white;
+    border-radius: 5px;
+}

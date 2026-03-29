@@ -7,7 +7,8 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navHeading">
-<a href="/"><img src={Logo} alt="CodeSphere logo" /></a>        </div>
+          <a href="/"><img src={Logo} alt="CodeSphere logo" /></a>        
+        </div>
 
         <div className="navMainLink">
           <a href="/features">Features</a>

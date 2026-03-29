@@ -1,13 +1,13 @@
 import React from "react";
+import Logo from '../assets/CodeSphere.png'
 import './navbar.css';
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <>
       <nav className="navbar">
         <div className="navHeading">
-          <a href="/">Code Sphere</a>
-        </div>
+<a href="/"><img src={Logo} alt="CodeSphere logo" /></a>        </div>
 
         <div className="navMainLink">
           <a href="/features">Features</a>
@@ -26,4 +26,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

@@ -1,10 +1,19 @@
 import React from 'react'
+import './login.css'
+import Logo from '../assets/CodeSphere.png'
+import login_Logo from '../assets/Login.png'
 
-const login = () => {
+const Login = () => {
   return (
-    <>
+    <div className='login'>
 
-        <div>
+        <div className='imgBlock'>
+            {/* <h1>Code Sphere</h1> */}
+            <img src={login_Logo} alt="" />
+            {/* <img src={Logo} alt="CodeSphere logo" /> */}
+        </div>
+
+        <div className='loginBlock'>
 
         <h1>Login to Code Sphere</h1>
 
@@ -34,8 +43,8 @@ const login = () => {
 
 
         </div>
-    </>
+    </div>
   )
 }
 
-export default login
+export default Login

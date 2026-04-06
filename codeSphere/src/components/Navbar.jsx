@@ -15,7 +15,7 @@ const Navbar = () => {
           <a href="/documentation">Docs</a>
           <a href="/developer">Developers</a>
           <a href="/interviewer">Interviewers</a>
-          <a href="/pricing">Pricing</a>
+          <a href="/code-editor">Code Editor</a>
         </div>
 
         <div className="auth">

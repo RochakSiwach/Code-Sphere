@@ -11,7 +11,6 @@ const Navbar = () => {
         </div>
 
         <div className="navMainLink">
-          <a href="/features">Features</a>
           <a href="/documentation">Docs</a>
           <a href="/developer">Developers</a>
           <a href="/interviewer">Interviewers</a>

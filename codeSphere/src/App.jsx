@@ -1,23 +1,27 @@
-import React from 'react'
-import Navbar from './components/navbar'
-import Login from './auth/login'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
-import SignUp from './auth/SignUp'
 import Documentation from './components/Documentation'
+import Login from './auth/Login'
+import SignUp from './auth/SignUp'
 
 const App = () => {
   return (
     <div>
-
       <Navbar></Navbar>
-      <Login></Login>
-      {/* <LandingPage></LandingPage> */}
-      {/* <SignUp></SignUp> */}
-      {/* <Documentation></Documentation> */}
-      
 
+      <Routes>
+        {/* navbar main route */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/documentation" element={<Documentation />} />
+        <Route path='/developer'  />
+        <Route path='/interviwer' />
+        <Route path='code-editor' />
+        {/* auth route */}
+        <Route path='/login' element={<Login></Login>}/>
+        <Route path='signUp' element={<SignUp/>} />
+      </Routes>
     </div>
-
   )
 }
 

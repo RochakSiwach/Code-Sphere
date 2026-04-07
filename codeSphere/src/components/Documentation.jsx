@@ -578,7 +578,7 @@ Only admin or authorized users can generate and view system reports.`,
   ];
 
   return (
-    <div>
+    <div className="docs">
       <h1>Documentation of Code Sphere</h1>
 
       {docs.map((data, id) => {

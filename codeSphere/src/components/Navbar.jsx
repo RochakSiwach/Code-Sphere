@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 import Logo from '../assets/CodeSphere.png'
 import './navbar.css';
 
@@ -7,19 +8,20 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navHeading">
-          <a href="/"><img src={Logo} alt="CodeSphere logo" /></a>        
+          <NavLink to='/'><img src={Logo} alt="CodeSphere logo" /></NavLink>      
         </div>
 
         <div className="navMainLink">
-          <a href="/documentation">Docs</a>
-          <a href="/developer">Developers</a>
-          <a href="/interviewer">Interviewers</a>
-          <a href="/code-editor">Code Editor</a>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/documentation'>Docs</NavLink>
+          <NavLink to='/developer'>Developers</NavLink>
+          <NavLink to='/interviewer'>Interviewers</NavLink>
+          <NavLink to='/code-editor'>Code Editor</NavLink>
         </div>
 
         <div className="auth">
-          <a href="/login">Sign In</a>
-          <a href="/signup" className="primary">Get Started</a>
+          <NavLink to='/login'>Login</NavLink>
+          <NavLink to='/signup' className="primary">Get Started</NavLink>
         </div>
       </nav>
     </>

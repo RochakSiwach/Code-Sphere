@@ -19,7 +19,7 @@ body {
 }
 
 /* ===== Main docs heading ===== */
-h1 {
+.docs h1 {
   max-width: 1150px;
   margin: 32px auto 22px;
   padding: 26px 28px;

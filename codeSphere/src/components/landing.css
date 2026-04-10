@@ -1,12 +1,294 @@
-.pageOne{
+.pageOne {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background: rgb(242, 244, 252);
-    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.pageOne-heading{
+.pageOne-heading {
+    font-size: 5rem;
     text-align: center;
+}
+
+.pageOne h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.description {
+    max-width: 900px;
+    text-align: center;
+    color: #555;
+}
+
+.connectCollection {
+    display: flex;
+    gap: 20px;
     align-items: center;
-    margin: 50px;
+}
+
+
+.emailInput {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+}
+
+.signUp {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.sourceCode {
+    background: black;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.built-with {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.tech {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tech a {
+    color: rgb(115, 115, 115);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tech a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
+.pageTwo {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(242, 244, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.features {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.featureBoxButton {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto 50px auto; 
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.featureBoxButton button {
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.featureBoxButton button:hover {
+    background: black;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.featureBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1400px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.featureContent:hover {
+    transform: translateY(-5px);
+}
+
+.featureContent .content {
+    flex: 1;
+    text-align: left;
+}
+
+.featureContent img {
+    width: 50%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.featureBox h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.featureBox p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+
+/* page three */
+.usecases {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(242, 244, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.usecases h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.usecaseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.usecaseCard {
+    position: relative;
+    background: white;
+    padding: 35px 28px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    overflow: hidden;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.usecaseCard:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.usecaseCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.usecaseCard h3::before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 35px;
+    z-index: 0;
+    opacity: 0.05;
+}
+
+.usecaseCard p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+
+
+
+.quote{
+    font-size: 7rem;
+    text-shadow: 10px 10px 8px rgba(0,0,0,0.05);
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.footer {
+    width: 100%;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.footer div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #777;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #111;
+    transform: translateY(-2px);
 }

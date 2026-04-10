@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage'
 import Documentation from './components/Documentation'
 import Login from './auth/Login'
 import SignUp from './auth/SignUp'
+import Developer from './components/Developer'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         {/* navbar main route */}
         <Route path="/" element={<LandingPage />} />
         <Route path="/documentation" element={<Documentation />} />
-        <Route path='/developer'  />
+        <Route path='/developer' element={<Developer />} />
         <Route path='/interviwer' />
         <Route path='code-editor' />
         {/* auth route */}

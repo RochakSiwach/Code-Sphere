@@ -1,0 +1,12 @@
+.pageOne{
+    width: 100%;
+    height: 80vh;
+    background: rgb(242, 244, 252);
+    color: black;
+}
+
+.pageOne-heading{
+    text-align: center;
+    align-items: center;
+    margin: 50px;
+}

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import './landing.css'
 
 const welcomePage = () => {
   const [view, setView] = useState("one");
 
   return (
     <>
-      <div style={{ textAlign: "center" }}>
-        <h3 style={{ fontSize: "5rem" }}>Code, chat and collaborate in </h3>
+      <div className="pageOne" style={{ textAlign: "center" }}>
+        <h3 className="pageOne-heading" style={{ fontSize: "5rem" }}>Code, chat and collaborate in </h3>
         <h1 style={{ fontSize: "4rem" }}>one place.</h1>
         <p>
           Code Sphere is a real-time collaborative coding platform where
@@ -14,7 +15,7 @@ const welcomePage = () => {
           instantly, and build projects faster.
         </p>
 
-{/* inout signup and source code  */}
+        {/* inout signup and source code  */}
         <div
           style={{
             marginTop: "30px",
@@ -26,7 +27,7 @@ const welcomePage = () => {
             style={{
               border: "1px solid black",
               padding: "10px",
-              margin:"10px",
+              margin: "10px",
               borderRadius: "8px",
               display: "flex",
               gap: "10px",
@@ -58,22 +59,26 @@ const welcomePage = () => {
               Join now
             </a>
           </div>
-            <a href="https://github.com/RochakSiwach" 
-              style={{
-                background:"black",
-                width:"fit-content",
-                color:"white",
-                height:"60px",
-                padding:"10px",
-                margin:"10px",
-                borderRadius:"10px",
-                alignContent:"center"
-              }}>Our Source Code</a>
+          <a
+            href="https://github.com/RochakSiwach"
+            style={{
+              background: "black",
+              width: "fit-content",
+              color: "white",
+              height: "60px",
+              padding: "10px",
+              margin: "10px",
+              borderRadius: "10px",
+              alignContent: "center",
+            }}
+          >
+            Our Source Code
+          </a>
         </div>
         <div>
-            <p>Built with</p>
-            react, mongo, css, nodejs, express.js
-</div>  
+          <p>Built with</p>
+          react, mongo, css, nodejs, express.js
+        </div>
       </div>
     </>
   );
